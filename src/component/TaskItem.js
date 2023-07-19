@@ -5,7 +5,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import BlockIcon from '@mui/icons-material/Block';
 import { db, auth } from "../config/firebase";
-import { doc, updateDoc, deleteDoc, Timestamp } from "firebase/firestore";
+import { doc, updateDoc, deleteDoc } from "firebase/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 const style = {
@@ -149,7 +149,7 @@ const TaskItem = ({ arr }) => {
  
   function ButtonBlocked({blocked, userId}) {
 
-    if (userId == user.uid){
+    if (userId === user.uid){
       if (blocked){
         return (
           <Tooltip title="Desbloquear">

@@ -104,20 +104,20 @@ function Task() {
                                 <option value="0">Abertos</option>
                             </Select>
                     </div>
-                    {tasks.filter(x => ( selected == "all" ? x.item : x.item.completed == selected )).map(item => <TaskItem key={item.id} arr={item} />)}
+                    {tasks.filter(x => ( selected === "all" ? x.item : x.item.completed === selected )).map(item => <TaskItem key={item.id} arr={item} />)}
                 </div>
                 <div className='col-20 boder__left v_top'>
                     <div className='text-center'>
                         <h4> Lista de Usuários (online)</h4>
                     </div>
                     
-                    {users.filter(x => x.online == 1).map(item => <UserList key={item.id} arr={item} />)}
+                    {users.filter(x => x.online === 1).map(item => <UserList key={item.id} arr={item} />)}
 
                     <div className='text-center'>
                         <h4> Lista de Usuários (offline)</h4>
                     </div>
                     
-                    {users.filter(x => x.online == 0).map(item => <UserList key={item.id} arr={item} />)}
+                    {users.filter(x => x.online === 0).map(item => <UserList key={item.id} arr={item} />)}
                 </div>
             </div>
         </div>

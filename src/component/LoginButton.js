@@ -1,4 +1,4 @@
-import React, {useAuthState} from 'react'; 
+import React from 'react'; 
 import { db, auth, googleProvider } from '../config/firebase';
 import { collection, addDoc, serverTimestamp, query, where, getDocs, doc, updateDoc } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
@@ -31,7 +31,7 @@ const LoginButton = () => {
         localStorage.setItem('UserId', idUser);
       });
 
-      if(idUser != ""){
+      if(idUser !== ""){
         const docRef = doc(db, "user", idUser);
         const data = {
           lastLogin: serverTimestamp()

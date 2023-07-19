@@ -3,7 +3,7 @@ const UserList = ({ arr }) => {
     function StatusItem(){
         let status = "(Off-Line)";
 
-        if(arr.online == 1){
+        if(arr.online === 1){
             status = "(On-Line)"
         }
         
