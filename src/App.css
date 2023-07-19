@@ -1,0 +1,166 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+span.task-completed {
+  text-decoration: line-through;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.reset {
+  padding: 0;
+  margin: 0;
+}
+.space_top{
+  padding-top: 10px;
+}
+
+.mt0{
+  margin-top: 0px;
+}
+
+.ml10{
+  margin-left: 10px;
+}
+.space__20{
+  padding-top: 20px;
+}
+
+.space__40{
+  padding-top: 40px;
+}
+
+.row{
+  width: 100%;
+  text-align: left;
+}
+
+.col-5{
+  width: 5%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.col-15{
+  width: 15%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.col-20{
+  width: 20%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.col-30{
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+}
+
+.col-50{
+  width: 48%;
+  display: inline-block;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.col-60{
+  width: 60%;
+  display: inline-block;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.col-70{
+  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.col-100{
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.logout{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left{
+  text-align: left !important;
+}
+
+.subItem {
+  font-size: small;
+  font-weight: 300;
+  font-style: italic;
+  color: gray
+}
+
+.v_middle{
+  vertical-align: middle;
+}
+
+.v_top{
+  vertical-align: top;
+}
+
+.boder__left {
+  border-left: solid;
+}
