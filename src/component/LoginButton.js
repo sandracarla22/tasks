@@ -43,7 +43,7 @@ const LoginButton = () => {
         })
       }
       else {
-        const result = await addDoc(collection(db, 'user'), {
+        await addDoc(collection(db, 'user'), {
           lastLogin: serverTimestamp(),
           name: user.displayName,
           email: user.email
