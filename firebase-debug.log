@@ -1,0 +1,58 @@
+[debug] [2023-07-19T19:44:59.243Z] ----------------------------------------------------------------------
+[debug] [2023-07-19T19:44:59.245Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sandr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init database
+[debug] [2023-07-19T19:44:59.245Z] CLI Version:   12.4.4
+[debug] [2023-07-19T19:44:59.245Z] Platform:      win32
+[debug] [2023-07-19T19:44:59.246Z] Node Version:  v18.16.0
+[debug] [2023-07-19T19:44:59.247Z] Time:          Wed Jul 19 2023 16:44:59 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2023-07-19T19:44:59.247Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-19T19:44:59.309Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-19T19:44:59.309Z] > authorizing via signed-in user (sandra.gielow.c@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\sandr\Documents\GitHub\tasks
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-07-19T19:45:01.916Z] Using project from CLI flag: todo-sandra
+[debug] [2023-07-19T19:45:01.919Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todo-sandra [none]
+[debug] [2023-07-19T19:45:02.406Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todo-sandra 200
+[debug] [2023-07-19T19:45:02.406Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todo-sandra {"projectId":"todo-sandra","projectNumber":"792312027273","displayName":"todo-sandra","name":"projects/todo-sandra","resources":{"hostingSite":"todo-sandra"},"state":"ACTIVE","etag":"1_3d999936-63d9-4887-b14c-af9661da2a08"}
+[info] i  Using project todo-sandra (todo-sandra) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-07-19T19:45:02.412Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-07-19T19:45:02.412Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/todo-sandra
+[debug] [2023-07-19T19:45:03.570Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com 200
+[debug] [2023-07-19T19:45:03.570Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-07-19T19:45:03.571Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-07-19T19:45:03.571Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/todo-sandra
+[debug] [2023-07-19T19:45:05.315Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-07-19T19:45:05.315Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-07-19T19:45:15.323Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-07-19T19:45:15.324Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/todo-sandra
+[debug] [2023-07-19T19:45:16.392Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com 200
+[debug] [2023-07-19T19:45:16.392Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todo-sandra/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-07-19T19:45:16.397Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todo-sandra [none]
+[debug] [2023-07-19T19:45:16.792Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todo-sandra 200
+[debug] [2023-07-19T19:45:16.792Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todo-sandra {"projectId":"todo-sandra","projectNumber":"792312027273","displayName":"todo-sandra","name":"projects/todo-sandra","resources":{"hostingSite":"todo-sandra"},"state":"ACTIVE","etag":"1_3d999936-63d9-4887-b14c-af9661da2a08"}
